@@ -1,40 +1,28 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
-.header {
+[class^="col-"] {
+border: 1px solid white;
+
+}
+[class^="col-"] img{
     width: 100%;
-    height: 70px;
+    height: 100%;
+}
+.header {
+    height: 65px;
     background: #1f2024;
     color: #c3c3c3;
+    padding: 0;
+}
+.nav-menu {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
-.header .header-logo img {
-    height: 100%;
-    width: 150px;
-}
-
-.header .header-icon {
-    padding-top: 20px;
-    margin-right: 50px;
-}
-
-.header .header-icon img {
-    width: 20px;
-    height: 18px;
-    margin: 0 15px;
-}
-
-.header-menu {
-    display: flex;
-    box-sizing: border-box;
-}
-
 .item-km {
     position: relative;
     display: inline-block;
@@ -44,7 +32,7 @@
     background-color: crimson;
     color: #c3c3c3;
     padding: 23px;
-    font-size: 16px;
+    font-size: small;
     border: none;
     cursor: pointer;
 }
@@ -71,7 +59,7 @@
 }
 
 .item-km:hover .km-button {
-    border-bottom: 5px solid blue;
+    border-bottom: 3px solid blue;
     color: blue;
 }
 
@@ -89,8 +77,8 @@
 .item-dropdown .dropdown-button {
     background-color: #1f2024;
     color: #c3c3c3;
-    padding: 23px;
-   font-size: 16px;
+    padding: 22px;
+    font-size: small;
     border: none;
     cursor: pointer;
 }
@@ -118,18 +106,18 @@
 }
 
 .item-dropdown:hover .dropdown-button {
-    border-bottom: 5px solid blue;
+    border-bottom: 3px solid blue;
     color: blue;
 }
 
 .item-text {
     color: #c3c3c3;
-    padding: 24px;
-    font-size: 15px;
+    padding: 22px;
+    font-size: small;
     min-width: 50px;
 }
 
 .item-text:hover {
-    border-bottom: 5px solid blue;
+    border-bottom: 3px solid blue;
     color: blue;
 }
