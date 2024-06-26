@@ -195,3 +195,29 @@ img {
     width: 400px;
     height: 300px;
 }
+
+.card-footer {
+    color: white ;
+    background: red;
+    text-align: center;
+    padding: 5px;
+}
+[class^="col-"] .card img {
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+}
+[class^="col-"] .card-group {
+    width: 200px;
+    height: 150px;
+}
+[class^="col-"] .card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+
+
