@@ -31,7 +31,7 @@ let str = ``;
 for (let i = 0; i < listSale.length; i++) {
     str += `
     <div class="col-3 mt-3">
-                    <div class="card-group">
+                    <div>
                         <div class="card">
                             <img src="${listSale[i].img}" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -45,6 +45,8 @@ for (let i = 0; i < listSale.length; i++) {
                         </div>
                     </div>
                 </div>
+
+                
     `
 }
 document.getElementById('showProductSale').innerHTML = str;
@@ -56,20 +58,64 @@ let listNew = [
         img: 'https://store.sony.com.vn/cdn/shop/files/ULT_WEAR_Black_Front-Large_b6b57978-b462-40e7-8e13-1f397904d382_600x.jpg?v=1713252838',
         star: '...',
     },
+    {
+        name: 'Máy chơi game PlayStation 5 Slim',
+        price: '13,300,000₫',
+        img: 'https://store.sony.com.vn/cdn/shop/files/PS5_D_SA_RNDR_LT_PROD_RGB_E32_240125_600x.png?v=1711962851',
+        star: '...',
+    },
+    {
+        name: 'Bộ máy chơi game PS5 hai tay cầm',
+        price: '15,000,000₫',
+        img: 'https://store.sony.com.vn/cdn/shop/files/PS5_2xDSWC_D_BNDL_RNDR_LT_PROD_RGB_ETCK_240206_600x.png?v=1712287416',
+        star: '...',
+    },
+    {
+        name: 'BRAVIA 3 - 55inch | K-55S30 | 4K HDR Processor X1™ | 4K Ultra HD | Dải tần nhạy sáng cao (HDR) | Smart TV (Google TV)',
+        price: '17,890,000₫',
+        img: 'https://store.sony.com.vn/cdn/shop/files/1_65_S30_blk_blk_outsideh_front-Mid_600x.png?v=1714962630',
+        star: '...',
+    },
+    {
+        name: '[Đặt hàng trước tặng Bravia Cam 4,5 triệu] BRAVIA 9 - 85inch | Bộ xử lý XR Processor | Mini LED | 4K Ultra HD | Dải tần nhạy sáng cao (HDR) | TV thông minh (Google TV)',
+        price: '121,990,000₫',
+        img: 'https://store.sony.com.vn/cdn/shop/files/TVFY23_UP_Primary_image_5dc0f9f4-e178-41b7-84a2-b497cfc7b37a_400x.jpg?v=1718252662',
+        star: '...',
+    },
+    {
+        name: '[Đặt hàng trước tặng Bravia Cam 4,5 triệu] BRAVIA 8 - 55inch | XR Processor | OLED | 4K Ultra HD | Dải tần nhạy sáng cao (HDR) | Smart TV (Google TV)',
+        price: '44,890,000₫',
+        img: 'https://store.sony.com.vn/cdn/shop/files/TVFY23_UM_Primary_image_400x.jpg?v=1718251304',
+        star: '...',
+    },
+    {
+        name: '[Đặt hàng trước tặng Bravia Cam 4,5 triệu] BRAVIA 8 - 65inch | XR Processor | OLED | 4K Ultra HD | Dải tần nhạy sáng cao (HDR) | Smart TV (Google TV)\n' +
+            'Model: K-65XR80 VN3',
+        price: '64,890,000₫',
+        img: 'https://store.sony.com.vn/cdn/shop/files/TVFY23_UM_Primary_image_aba78009-f306-40c0-8159-1e4e22891ed8_400x.jpg?v=1718252487',
+        star: '...',
+    },
+    {
+        name: '[Đặt hàng trước tặng Bravia Cam 4,5 triệu] BRAVIA 9- 75inch | Bộ xử lý XR Processor | Mini LED | 4K Ultra HD | Dải tần nhạy sáng cao (HDR) | TV thông minh (Google TV)\n' +
+            'Model: K-75XR90 VN3',
+        price: '92,890,000₫',
+        img: 'https://store.sony.com.vn/cdn/shop/files/TVFY23_UP_Primary_image_400x.jpg?v=1718252571',
+        star: '...',
+    },
     ]
 let strNew = ``;
 for (let i = 0; i < listNew.length; i++) {
     strNew += `
     <div class="col-3 mt-3">
-                    <div class="card-group">
+                    <div>
                         <div class="card">
                             <img src="${listNew[i].img}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">${listNew[i].name}</h5>
-                                <small class="text-muted">${listNew[i].star}</small>                              
-                                <h5 class="card-title"  style="color: red">${listNew[i].price}</h5>                          
+                                <small class="text-muted">${listNew[i].star}</small>
+                                <h5 class="card-title"  style="color: red">${listNew[i].price}</h5>
                             </div>
-                            <div class="card-footer">                       
+                            <div class="card-footer">
                                 <h6 class="card-text">Thêm vào giỏ hàng</h6>
                             </div>
                         </div>
