@@ -30,7 +30,7 @@ let listSale = [
 let str = ``;
 for (let i = 0; i < listSale.length; i++) {
     str += `
-    <div class="col-3 mt-3">
+    <div class="col-xl-3 col-md-6 col-12 mt-3">
                     <div>
                         <div class="card">
                             <img src="${listSale[i].img}" class="card-img-top" alt="...">
@@ -106,7 +106,7 @@ let listNew = [
 let strNew = ``;
 for (let i = 0; i < listNew.length; i++) {
     strNew += `
-    <div class="col-3 mt-3">
+    <div class="col-xl-3 col-md-6 col-12 mt-3">
                     <div>
                         <div class="card">
                             <img src="${listNew[i].img}" class="card-img-top" alt="...">
