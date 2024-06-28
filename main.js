@@ -125,7 +125,25 @@ for (let i = 0; i < listNew.length; i++) {
 }
 document.getElementById('showProductNew').innerHTML = strNew;
 
-// Get the button:
+//Phần chú thích
+function showNote() {
+    document.getElementById("myNote").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.drop-btn')) {
+        var dropdowns = document.getElementsByClassName("note-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+// Get the button back to top
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -145,3 +163,5 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
