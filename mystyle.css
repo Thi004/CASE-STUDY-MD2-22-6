@@ -597,11 +597,9 @@ a:hover {
         width: 80px;
         height: 20px;
     }
-
 }
 
 @media screen and (max-width: 600px) {
-
 
     .menu-product {
         display: flex;
@@ -653,7 +651,6 @@ a:hover {
         font-size: 12px;
         text-align: center;
     }
-
 
     .information {
         margin-left: 50px;
